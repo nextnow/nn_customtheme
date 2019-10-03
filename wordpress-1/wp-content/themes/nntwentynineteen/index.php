@@ -15,12 +15,23 @@
 ?>
 
 <div class="main-content-width-container">
-        <h1 class="main-content-h1-title">Title</h1>
-        <h5 class="main-content-h5-subtitle">Subheading</h5>
-        <div class="main-content">
-            <img class="main-content-hero-pic" src="https://placezombie.com/640x360">
-            <h4 class="main-content-p-text"></h4>
-        </div>
+<h1>test</h1>
+        <!-- <h1 class="main-content-h1-title"></h1> -->
+        <h1><?php echo get_the_title() ?></h1>
+        <!-- <h5 class="main-content-h5-subtitle"></h5> -->
+        <main class="main-content">
+        <?php 
+            // Start the loop
+            if (have_posts()) :
+                while (have_posts()):
+                    the_post();
+                            the_content();
+                endwhile;
+            endif;
+        ?>
+            <!-- <img class="main-content-hero-pic" src="https://placezombie.com/640x360">
+            <h4 class="main-content-p-text"></h4> -->
+        </main>
     </div>
     
     <?php get_footer(); ?>

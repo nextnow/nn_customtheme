@@ -15,6 +15,7 @@ var tween5 = TweenMax.from('.portfolio-nba-img', 2, { opacity:0, ease:Circ.easeO
 var tl = new TimelineLite();
 
 tl.from(".portfolio-hero-img", 2, {opacity:0, ease: Circ.easeOut, y: -500})
+    .from(".nav-ul-blk", 2, {opacity:0, ease: Circ.easeOut, y: -500}, "-=2")
     .from('.portfolio-h5-featured', .50, {y:-25, scale:0, ease:Back.easeOut},"-=.5")
     .from('.portfolio-icon-chev', .50, {y:25, scale:0, ease:Back.easeOut}, "-=.25");
 

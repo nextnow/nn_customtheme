@@ -33,6 +33,7 @@ lightgrey: #e1dedd
     /* 2 */
 }
 
+
 /* Sections
      ========================================================================== */
 
@@ -432,6 +433,7 @@ Gill Sans Nova SemiBold 600 weight
 
 html {
     font-size: 16px;
+  
 }
 
 body {
@@ -540,6 +542,7 @@ a {
 /* unvisited link */
 a:link {
     color:#faf9f7;
+    text-decoration: none !important;
 }
 
 /* visited link */
@@ -585,6 +588,8 @@ a:active {
     justify-content: space-between;
     font-size: 1.618em;
     letter-spacing: 3px;
+    margin-bottom: -88px;
+    margin-right: 50px;
 }
 
 .nav-logo {
@@ -598,9 +603,8 @@ a:active {
     left: 28px;
     width: 8%;
 }
-.nav-ul {
-    display: inline;
-    margin-right: 2em;
+.nav-ul-blk {
+    z-index: 100;
 }
 
 .nav-ul-blk a{
@@ -629,7 +633,7 @@ a:active {
 
 .nav li {
     display: inline-flex;
-    margin-left: 3.6em;
+    margin-left: 3em;
 }
 
 
@@ -880,8 +884,3 @@ h2.blah {
     margin-bottom: 125px;
     line-height: 0em;
 }
-
-
-
-
-/* lab template */
